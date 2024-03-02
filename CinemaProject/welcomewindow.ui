@@ -16,22 +16,25 @@
   <widget class="QLabel" name="labelHello">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>50</y>
-     <width>63</width>
+     <x>160</x>
+     <y>40</y>
+     <width>331</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
     <string>Hello </string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="labelWelcome">
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>100</y>
-     <width>101</width>
+     <y>80</y>
+     <width>51</width>
      <height>41</height>
     </rect>
    </property>
@@ -42,8 +45,8 @@
   <widget class="QLabel" name="labelpic">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>150</y>
+     <x>150</x>
+     <y>140</y>
      <width>371</width>
      <height>221</height>
     </rect>
@@ -55,8 +58,8 @@
   <widget class="QPushButton" name="pushButtonSignOut">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>370</y>
+     <x>290</x>
+     <y>390</y>
      <width>93</width>
      <height>29</height>
     </rect>

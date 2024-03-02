@@ -15,8 +15,13 @@ public:
     explicit RegisterWindow(QWidget *parent = nullptr);
     ~RegisterWindow();
 
+private slots:
+    void on_pushButtonRegister_clicked();
+
 private:
     Ui::RegisterWindow *ui;
+    void resetErrors();
+    int getCurrentYear();
 };
 
 #endif // REGISTERWINDOW_H

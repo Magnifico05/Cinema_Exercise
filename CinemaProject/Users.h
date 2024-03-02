@@ -2,8 +2,11 @@
 #define USERS_H
 
 #include <QString>
-extern QString usernames[100];
-extern QString passwords[100];
+
+#define MAX_USERS 100
+
+extern QString usernames[MAX_USERS];
+extern QString passwords[MAX_USERS];
 extern int ages[100];
 extern int usersCount;
 
