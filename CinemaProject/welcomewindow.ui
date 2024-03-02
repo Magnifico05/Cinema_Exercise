@@ -52,7 +52,7 @@
     <string>pic</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButtonLogout">
+  <widget class="QPushButton" name="pushButtonSignOut">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -62,7 +62,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Logout</string>
+    <string>Sign out</string>
    </property>
   </widget>
  </widget>

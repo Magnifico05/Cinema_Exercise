@@ -20,19 +20,24 @@ LoginWindow::~LoginWindow()
 
 void LoginWindow::on_pushButtonLogin_clicked()
 {
-    bool Success = false;
+    bool isCorrect = false;
+    int indexFound = -1;
     for (int i = 0; i < usersCount; i++)
     {
-        if ((ui->lineEditUsername->text() == usernames[i]) || (ui->lineEditPassword->text() == passwords[i]))
-            Success = true;
+        // Check if username and password are the same
+        if ((ui->lineEditUsername->text() == usernames[i]) && (ui->lineEditPassword->text() == passwords[i])){
+            isCorrect = true;
+            indexFound = i;
+            break;
+        }
     }
 
 
-    if (Success)
+    if (isCorrect)
     {
-    hide();
-    WelcomeWindow* welcome = new WelcomeWindow(this);
-    welcome->show();
+        hide();
+        WelcomeWindow* welcome = new WelcomeWindow(usernames[indexFound], ages[indexFound], this);
+        welcome->show();
     }
     else
     {
@@ -43,6 +48,8 @@ void LoginWindow::on_pushButtonLogin_clicked()
 
 void LoginWindow::on_pushButtonRegister_clicked()
 {
-
+    hide();
+    RegisterWindow* registerWindow = new RegisterWindow(this);
+    registerWindow->show();
 }
 
