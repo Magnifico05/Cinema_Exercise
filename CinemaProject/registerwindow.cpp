@@ -3,7 +3,6 @@
 #include "welcomewindow.h"
 #include "Users.h"
 #include <ctime>
-#include <iostream>
 
 RegisterWindow::RegisterWindow(QWidget *parent)
     : QDialog(parent)
@@ -76,10 +75,6 @@ void RegisterWindow::on_pushButtonRegister_clicked() {
     passwords[usersCount] = password;
     ages[usersCount] = age;
     usersCount++;
-
-    for(int i = 0; i < usersCount; i++) {
-        std::cout << usernames[i].toStdString() << " " << passwords[i].toStdString() << " " << ages[i] << std::endl;
-    }
 
     hide();
     WelcomeWindow* welcomeWindow = new WelcomeWindow(username, age, this);
